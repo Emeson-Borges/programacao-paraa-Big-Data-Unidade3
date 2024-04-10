@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import psycopg2 as psy
+import matplotlib.pyplot as plt
 
 # Função para executar consulta SQL
 def execute_query(query):
@@ -55,3 +56,5 @@ if st.button('Executar'):
             st.error(f'Ocorreu um erro ao executar a consulta: {str(e)}')
     else:
         st.warning('Por favor, insira uma consulta SQL válida.')
+
+
